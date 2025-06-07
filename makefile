@@ -1,20 +1,10 @@
 
-TARGET=modo
-BUILDDIR=build
-SRCDIR=src
-SRC= $(shell find $(SRCDIR) -name "*.cpp")
-OBJ= $(patsubst $(SRCDIR)/%.cpp, $(BUILDDIR)/%.o, $(SRC))
+all: build
 
-all: $(TARGET)
+build:
+	@cmake --build build
 
-$(TARGET): $(OBJ)
-	@echo Compiling $@
-	@g++ -o $@ $^ -lncurses
-	@echo "Built target: $@"
+run: build
+	@build/modo $(a)
 
-$(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
-	@mkdir -p $(BUILDDIR)
-	@g++ -c -o $@ $<
-
-
-
+.PHONY: run build

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/modo.dir/src/main.cpp.o -o modo  -lncurses

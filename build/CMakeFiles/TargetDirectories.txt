@@ -1,0 +1,3 @@
+/home/dry/programming/cpp/modo/build/CMakeFiles/modo.dir
+/home/dry/programming/cpp/modo/build/CMakeFiles/edit_cache.dir
+/home/dry/programming/cpp/modo/build/CMakeFiles/rebuild_cache.dir
